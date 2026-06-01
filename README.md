@@ -14,17 +14,3 @@ This repo is intentionally smaller than the private thesis workspace. It keeps t
 ├── results/       final figures and summary exports
 └── thesis/        final PDF and a few public-facing assets
 ```
-
-## What to expect
-
-- final thesis PDF
-- stable analysis scripts used for the published results
-- selected figures and tables from the report
-- short notes on how the results were produced
-
-## What is not included
-
-- LaTeX source files
-- raw student submissions
-- private meeting notes
-- toy examples or demo fixtures
