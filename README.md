@@ -2,8 +2,7 @@
 
 Public support repository for my UCLouvain master thesis on profiling novice programmers from incremental programming submissions.
 
-This repo is intentionally smaller than the private thesis workspace. It keeps the material that helps with understanding and reproducing the results, without the LaTeX source tree, raw data, or local working files.
-
+This repo is intentionally smaller than my original private thesis workspace. It only keeps the material that helps with understanding and reproducing the results.
 ## Layout
 
 ```text
