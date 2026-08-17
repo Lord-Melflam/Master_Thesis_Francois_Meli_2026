@@ -1,0 +1,20 @@
+     """
+     result=[]
+-    nb=len(image)
+-    f=0
+-    point=0
+-    while f<(nb+1):
+-        for n in range(nb):
+-            colonne=[]
+-            for i in range(nb):
+-                point=image[n][i]
+-                colonne.append.point()
+-            result.append.colonne()
++    for f<=len(image):
++        colonne=[]
++        for i in image:
++            colonne.append(image[i][f])
++        result.append(colonne)
+         f+=1
+-    return result
++    return colonne

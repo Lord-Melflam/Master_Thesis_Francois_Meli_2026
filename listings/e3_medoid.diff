@@ -1,0 +1,13 @@
+         self.bonus_par_produit = bonus_par_produit
+     def __bonus__(self):
+-        prime = self.produits_vendus * self.bonus_par_produit
+-        return prime
++        return = self.produits_vendus * self.bonus_par_produit
++
+     def __salaire__(self, ):
+-        nsalaire = super().salaire() + __bonus__(self)
+-        return nsalaire
++        return= super().salaire() + __bonus__(self)
++
+     def __str(self):
+         return nsalaire

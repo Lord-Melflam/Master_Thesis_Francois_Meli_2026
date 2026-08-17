@@ -1,0 +1,39 @@
+Episode-level behaviour shapes (order-sensitive). behaviour = one (student,question) attempt-sequence.
+PASS = score >= 50. Shapes (observable patterns): one-shot, steady-climb, breakthrough, pass after reversals, many tries, no pass, few tries, no pass.
+Clusters from common.cluster (exam k=4, year k=3).
+
+=== EXAM: 2904 episodes over 569 students -- shape distribution (circumstance) ===
+    one-shot                  101  (  3.5%)
+    steady-climb              336  ( 11.6%)
+    breakthrough              735  ( 25.3%)
+    pass after reversals      161  (  5.5%)
+    many tries, no pass      1235  ( 42.5%)
+    few tries, no pass        336  ( 11.6%)
+
+=== YEAR: 33888 episodes over 569 students -- shape distribution (circumstance) ===
+    one-shot                10332  ( 30.5%)
+    steady-climb             6001  ( 17.7%)
+    breakthrough            15074  ( 44.5%)
+    pass after reversals      995  (  2.9%)
+    many tries, no pass       698  (  2.1%)
+    few tries, no pass        788  (  2.3%)
+
+--- Profile cluster x episode-shape mix (row % of that cluster's episodes) ---
+  EXAM:
+    cluster                       one-shot  steady-clim  breakthroug  pass after   many tries,  few tries, 
+    E1 (grade  1/med  0)         0.0%         0.0%         0.0%         0.0%        23.1%        76.9%
+    E2 (grade 12/med  4)         0.5%         4.8%         7.2%         1.4%        57.9%        28.1%
+    E3 (grade 40/med 33)         3.7%        13.3%        24.2%         6.4%        44.8%         7.6%
+    E4 (grade 85/med 90)         6.9%        11.3%        67.2%         6.6%         6.2%         1.8%
+
+  YEAR:
+    cluster                       one-shot  steady-clim  breakthroug  pass after   many tries,  few tries, 
+    Y1 (grade 33/med 20)        46.1%        12.9%        33.6%         1.0%         2.8%         3.5%
+    Y2 (grade 35/med 28)        15.8%        15.4%        59.6%         4.0%         2.9%         2.3%
+    Y3 (grade 42/med 35)        30.4%        19.3%        43.4%         3.1%         1.7%         2.1%
+
+--- 'breakthrough' share vs question pass rate (does the shape only appear on high-pass-rate questions?) ---
+  EXAM: 6 questions (>= 20 episodes). 'breakthrough' share on the LOWER-pass-rate half = 22.7%, on the HIGHER-pass-rate half = 27.5%; corr(pass rate, share) r=+0.96.
+  YEAR: 99 questions (>= 20 episodes). 'breakthrough' share on the LOWER-pass-rate half = 43.6%, on the HIGHER-pass-rate half = 42.8%; corr(pass rate, share) r=+0.17.
+  note: reaching the pass mark is part of this shape, so some link with the pass rate is expected; the point is whether the shape still appears where the pass rate is lower.
+

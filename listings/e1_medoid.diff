@@ -1,0 +1,31 @@
+ 
+     def __init__(self, nom, taux_horaire, heures_travaillees):
+-        self.nom = nom
+-        self.taux_horaire = taux_horaire
+-        self.heures_travaillees = heures_travaillees
+ 
++        self.nom = bob
++        self.taux_horaire = 20
++        self.heures_travaillees = 160
+     def salaire(self):
+-        return self.taux_horaire * self.heures_travaillees
++        if self.taux_horaire >= 0 :
++
++        if  self.heures_travaillees(n , n + 1):
++
++
++
++
++
++        return self.taux_horaire * self.heures_travaillees
++
++    def  bonus(self):
++        ef __init__(self, nom,  produits_vendus, bonus_par_produit):
++
++        self.nom = bob
++        self. produits_vendus= 156
++        self.bonus_par_produit = 2
++
++    return self. produits_vendus *  self.bonus_par_produit
++
++

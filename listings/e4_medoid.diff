@@ -1,0 +1,12 @@
+                     continue
+                 numero = -1
+-                line_prov += 1
++                ligne_prov += 1
+                 l = chaine.split(" ")
+                 for word in l :
+                     if len(word.strip()) > len(mot) :
+                         mot = word
+-                        ligne = line_prov
++                        ligne = ligne_prov
+                         n_ieme = numero
+         return (ligne, n_ieme, mot)

@@ -1,0 +1,29 @@
+{
+  "exam": [
+    "questions_attempted",
+    "median_attempts",
+    "median_fast_retry_ratio",
+    "median_mean_delta_sec",
+    "median_improving_ratio",
+    "median_edit_size",
+    "churn_ratio",
+    "breakthrough_ratio",
+    "median_nloc",
+    "median_comment_ratio",
+    "median_n_concepts"
+  ],
+  "year": [
+    "questions_attempted",
+    "median_attempts",
+    "median_fast_retry_ratio",
+    "median_long_pause_ratio",
+    "median_mean_delta_sec",
+    "median_improving_ratio",
+    "median_edit_size",
+    "churn_ratio",
+    "breakthrough_ratio",
+    "median_nloc",
+    "median_n_concepts",
+    "active_weeks"
+  ]
+}

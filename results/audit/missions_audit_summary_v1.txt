@@ -1,0 +1,41 @@
+MISSIONS AUDIT (2025.Q1)  -  235636 submissions, 703 distinct hashes, 99 questions
+date range: 2025-09-18 .. 2026-01-21   (unparseable ts: 0)
+(note: post-semester submissions are LEGITIMATE - students keep INGInious access.)
+
+CSV vs filename reconciliation:
+  filenames unparsed: 0
+  score match:      235636/235636
+  submission match: 235636/235636
+  hash match:       235636/235636
+
+status vs score coherence:
+  status=failed   score=0   : 95059
+  status=failed   score=mid : 86457
+  status=success  score=100 : 54120
+
+submissions per month (DESCRIPTIVE - late months are legitimate practice):
+  2025-09: 18573
+  2025-10: 47769
+  2025-11: 60513
+  2025-12: 40237
+  2026-01: 68544
+
+per-mission attrition (distinct students | submissions):
+  mission_01_comment: 652 students | 18794 subs
+  mission_02_comment: 639 students | 27405 subs
+  mission_03_comment: 618 students | 32958 subs
+  mission_04_comment: 610 students | 35460 subs
+  mission_05_comment: 543 students | 14327 subs
+  mission_06_comment: 541 students | 28147 subs
+  mission_07_comment: 504 students | 19218 subs
+  mission_08_comment: 490 students | 17819 subs
+  mission_09_comment: 451 students | 12659 subs
+  mission_10_comment: 417 students | 13616 subs
+  mission_11_comment: 391 students | 15233 subs
+
+duplicate (hash,mission,qname,n_submission) keys: 0
+
+FLAGGED = exam-staff hashes also present in missions: 0/0
+
+KNOWN LIMIT: mission-only staff (never touched the exam) are not reliably
+detectable from volume or dates; not flagged.

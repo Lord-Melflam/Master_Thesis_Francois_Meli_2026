@@ -1,0 +1,29 @@
+EXAM AUDIT (2026.01)  -  48020 submissions, 581 distinct hashes
+unparseable timestamps: 0
+
+CSV vs filename reconciliation (of parseable filenames):
+  filenames unparsed (Test*.py etc.): 0
+  score match:      48020/48020
+  submission match: 48020/48020
+  hash match:       48020/48020
+
+status vs score coherence:
+  status=failed   score=0   : 22525
+  status=failed   score=mid : 22560
+  status=success  score=100 : 2935
+
+submissions per date:
+  2026-01-22: 48020
+
+submissions per hour-of-day:
+  09h: 6675
+  10h: 8304
+  11h: 9351
+  12h: 4902
+  13h: 7705
+  14h: 8484
+  15h: 2599
+
+FLAGGED non-student hashes: 0  (all their rows removed)
+kept students: 581  (slot1=302, slot2=279)
+kept submissions: 48020

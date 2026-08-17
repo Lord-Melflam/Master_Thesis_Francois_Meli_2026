@@ -1,0 +1,381 @@
+{
+  "k": {
+    "exam": 4,
+    "year": 3
+  },
+  "kept": {
+    "exam": [
+      "questions_attempted",
+      "median_attempts",
+      "median_fast_retry_ratio",
+      "median_mean_delta_sec",
+      "median_improving_ratio",
+      "median_edit_size",
+      "churn_ratio",
+      "breakthrough_ratio",
+      "median_nloc",
+      "median_comment_ratio",
+      "median_n_concepts"
+    ],
+    "year": [
+      "questions_attempted",
+      "median_attempts",
+      "median_fast_retry_ratio",
+      "median_long_pause_ratio",
+      "median_mean_delta_sec",
+      "median_improving_ratio",
+      "median_edit_size",
+      "churn_ratio",
+      "breakthrough_ratio",
+      "median_nloc",
+      "median_n_concepts",
+      "active_weeks"
+    ]
+  },
+  "clusters": {
+    "exam": {
+      "1": {
+        "n": 15,
+        "grade_mean": 0.7,
+        "grade_median": 0.0,
+        "top_features": [
+          {
+            "feature": "distinct concepts",
+            "z": -3.38
+          },
+          {
+            "feature": "edits, no score gain",
+            "z": 2.95
+          },
+          {
+            "feature": "attempts/question",
+            "z": -2.22
+          },
+          {
+            "feature": "lines changed/edit",
+            "z": 1.64
+          }
+        ],
+        "signature_z": {
+          "questions attempted": -0.69,
+          "attempts/question": -2.22,
+          "quick resubmissions": -0.56,
+          "gap between tries": 1.0,
+          "tries that improved": -1.41,
+          "lines changed/edit": 1.64,
+          "edits, no score gain": 2.95,
+          "small fix, big gain": -0.31,
+          "code lines": -1.41,
+          "comment share": 1.2,
+          "distinct concepts": -3.38
+        }
+      },
+      "2": {
+        "n": 90,
+        "grade_mean": 12.1,
+        "grade_median": 3.5,
+        "top_features": [
+          {
+            "feature": "code lines",
+            "z": -1.42
+          },
+          {
+            "feature": "distinct concepts",
+            "z": -1.02
+          },
+          {
+            "feature": "tries that improved",
+            "z": -0.97
+          },
+          {
+            "feature": "lines changed/edit",
+            "z": -0.52
+          }
+        ],
+        "signature_z": {
+          "questions attempted": -0.43,
+          "attempts/question": -0.29,
+          "quick resubmissions": 0.16,
+          "gap between tries": -0.29,
+          "tries that improved": -0.97,
+          "lines changed/edit": -0.52,
+          "edits, no score gain": -0.3,
+          "small fix, big gain": -0.28,
+          "code lines": -1.42,
+          "comment share": 0.16,
+          "distinct concepts": -1.02
+        }
+      },
+      "3": {
+        "n": 417,
+        "grade_mean": 39.9,
+        "grade_median": 33.3,
+        "top_features": [
+          {
+            "feature": "code lines",
+            "z": 0.3
+          },
+          {
+            "feature": "distinct concepts",
+            "z": 0.29
+          },
+          {
+            "feature": "small fix, big gain",
+            "z": -0.24
+          },
+          {
+            "feature": "tries that improved",
+            "z": 0.17
+          }
+        ],
+        "signature_z": {
+          "questions attempted": 0.04,
+          "attempts/question": 0.17,
+          "quick resubmissions": -0.01,
+          "gap between tries": 0.02,
+          "tries that improved": 0.17,
+          "lines changed/edit": 0.09,
+          "edits, no score gain": -0.0,
+          "small fix, big gain": -0.24,
+          "code lines": 0.3,
+          "comment share": -0.06,
+          "distinct concepts": 0.29
+        }
+      },
+      "4": {
+        "n": 47,
+        "grade_mean": 85.4,
+        "grade_median": 90.2,
+        "top_features": [
+          {
+            "feature": "small fix, big gain",
+            "z": 2.77
+          },
+          {
+            "feature": "tries that improved",
+            "z": 0.82
+          },
+          {
+            "feature": "questions attempted",
+            "z": 0.65
+          },
+          {
+            "feature": "code lines",
+            "z": 0.55
+          }
+        ],
+        "signature_z": {
+          "questions attempted": 0.65,
+          "attempts/question": -0.21,
+          "quick resubmissions": -0.06,
+          "gap between tries": 0.07,
+          "tries that improved": 0.82,
+          "lines changed/edit": -0.31,
+          "edits, no score gain": -0.32,
+          "small fix, big gain": 2.77,
+          "code lines": 0.55,
+          "comment share": -0.18,
+          "distinct concepts": 0.5
+        }
+      }
+    },
+    "year": {
+      "1": {
+        "n": 155,
+        "grade_mean": 33.1,
+        "grade_median": 20.0,
+        "top_features": [
+          {
+            "feature": "questions attempted",
+            "z": -0.87
+          },
+          {
+            "feature": "active weeks",
+            "z": -0.85
+          },
+          {
+            "feature": "attempts/question",
+            "z": -0.63
+          },
+          {
+            "feature": "code lines",
+            "z": -0.6
+          }
+        ],
+        "signature_z": {
+          "questions attempted": -0.87,
+          "attempts/question": -0.63,
+          "quick resubmissions": -0.39,
+          "long pauses": -0.33,
+          "gap between tries": -0.29,
+          "tries that improved": 0.46,
+          "lines changed/edit": -0.39,
+          "edits, no score gain": -0.14,
+          "small fix, big gain": 0.53,
+          "code lines": -0.6,
+          "distinct concepts": -0.56,
+          "active weeks": -0.85
+        }
+      },
+      "2": {
+        "n": 93,
+        "grade_mean": 35.0,
+        "grade_median": 27.5,
+        "top_features": [
+          {
+            "feature": "quick resubmissions",
+            "z": 1.95
+          },
+          {
+            "feature": "attempts/question",
+            "z": 0.9
+          },
+          {
+            "feature": "tries that improved",
+            "z": -0.61
+          },
+          {
+            "feature": "gap between tries",
+            "z": -0.6
+          }
+        ],
+        "signature_z": {
+          "questions attempted": -0.03,
+          "attempts/question": 0.9,
+          "quick resubmissions": 1.95,
+          "long pauses": -0.18,
+          "gap between tries": -0.6,
+          "tries that improved": -0.61,
+          "lines changed/edit": -0.51,
+          "edits, no score gain": -0.04,
+          "small fix, big gain": -0.03,
+          "code lines": -0.31,
+          "distinct concepts": -0.12,
+          "active weeks": 0.01
+        }
+      },
+      "3": {
+        "n": 321,
+        "grade_mean": 41.6,
+        "grade_median": 34.8,
+        "top_features": [
+          {
+            "feature": "questions attempted",
+            "z": 0.43
+          },
+          {
+            "feature": "active weeks",
+            "z": 0.41
+          },
+          {
+            "feature": "code lines",
+            "z": 0.38
+          },
+          {
+            "feature": "quick resubmissions",
+            "z": -0.37
+          }
+        ],
+        "signature_z": {
+          "questions attempted": 0.43,
+          "attempts/question": 0.04,
+          "quick resubmissions": -0.37,
+          "long pauses": 0.21,
+          "gap between tries": 0.32,
+          "tries that improved": -0.04,
+          "lines changed/edit": 0.34,
+          "edits, no score gain": 0.08,
+          "small fix, big gain": -0.25,
+          "code lines": 0.38,
+          "distinct concepts": 0.31,
+          "active weeks": 0.41
+        }
+      }
+    }
+  },
+  "year_vs_exam": {
+    "n_common": 569,
+    "chi2": 28.63,
+    "dof": 6,
+    "p": 0.0001,
+    "cramers_v": 0.159,
+    "ari": 0.074,
+    "contingency_year_rows_exam_cols": [
+      [
+        9,
+        36,
+        95,
+        15
+      ],
+      [
+        3,
+        20,
+        64,
+        6
+      ],
+      [
+        3,
+        34,
+        258,
+        26
+      ]
+    ],
+    "exam_ids": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "year_ids": [
+      1,
+      2,
+      3
+    ],
+    "base_rate_exam": [
+      0.026,
+      0.158,
+      0.733,
+      0.083
+    ],
+    "P_exam_given_year": [
+      [
+        0.058,
+        0.232,
+        0.613,
+        0.097
+      ],
+      [
+        0.032,
+        0.215,
+        0.688,
+        0.065
+      ],
+      [
+        0.009,
+        0.106,
+        0.804,
+        0.081
+      ]
+    ],
+    "P_year_given_exam": [
+      [
+        0.6,
+        0.4,
+        0.228,
+        0.319
+      ],
+      [
+        0.2,
+        0.222,
+        0.153,
+        0.128
+      ],
+      [
+        0.2,
+        0.378,
+        0.619,
+        0.553
+      ]
+    ]
+  }
+}

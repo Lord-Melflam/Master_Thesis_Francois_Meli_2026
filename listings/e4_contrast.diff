@@ -1,0 +1,20 @@
+     moy = 0
+     div = 0
+-    while current_credit != None:
++    if credits_cours.length > notes_etudiant.length
++        while current_credit != None:
+ 
+-        if current_credit.cargo[0] == current_notes.cargo[0]:
++            if current_credit.cargo[0] == current_notes.cargo[0]:
+ 
+-            moy += current_notes.cargo[1] * current_credit.cargo[1]
+-            div += current_credit.cargo[1]
+-            if current_notes.next != None:
++                moy += current_notes.cargo[1] * current_credit.cargo[1]
++                div += current_credit.cargo[1]
++                if current_notes.next != None:
+                 current_notes = current_notes.next
+-        current_credit = current_credit.next
++            current_credit = current_credit.next
+ 
+ 

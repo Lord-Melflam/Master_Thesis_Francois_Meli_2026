@@ -1,0 +1,27 @@
+Rigorous k-selection on the DE-DUP clustering input (Ward). k=2..8, 569 students.
+sil/stab/CH higher = better; DB lower = better. No single index trusted alone.
+
+=== EXAM (n=569) ===
+   k  silhouette  stability  Calinski-H  Davies-B  rank-sum
+   2       0.256       0.45          76      2.16         8
+   3       0.183       0.52          65      1.95         7
+   4       0.185       0.54          61      1.82         4
+   5       0.131       0.45          58      2.06        14
+   6       0.070       0.37          55      2.02        20
+   7       0.079       0.41          53      1.87        17
+   8       0.087       0.43          53      1.77        14
+  best silhouette: k=2; best stability: k=4; best CH: k=2; best DB: k=8
+  --> rank-aggregated hint: k=4  (a hint, not a verdict; read the curve)
+
+=== YEAR (n=569) ===
+   k  silhouette  stability  Calinski-H  Davies-B  rank-sum
+   2       0.142       0.52          73      2.43        17
+   3       0.164       0.60          75      1.89         5
+   4       0.152       0.53          70      1.81        14
+   5       0.153       0.57          69      1.46         9
+   6       0.156       0.54          66      1.31         8
+   7       0.102       0.53          65      1.37        17
+   8       0.105       0.56          63      1.32        14
+  best silhouette: k=3; best stability: k=3; best CH: k=3; best DB: k=6
+  --> rank-aggregated hint: k=3  (a hint, not a verdict; read the curve)
+

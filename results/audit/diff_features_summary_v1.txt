@@ -1,0 +1,5 @@
+DIFF FEATURES (Tier 2). Edit cutoffs DATA-DERIVED (small=p50, large=p90 of edit sizes); churn = large edit & no gain; breakthrough = small edit & gain>= 50 (half the marks).
+exam: 577 students -> exam_diff_features_v1.csv  [small<= 1, large>= 6 lines]
+  exam means: median_edit_size=1.368, tiny_fix_ratio=0.576, churn_ratio=0.068, breakthrough_ratio=0.008
+missions: 698 students -> missions_diff_features_v1.csv  [small<= 2, large>= 9 lines]
+  missions means: median_edit_size=1.91, tiny_fix_ratio=0.684, churn_ratio=0.004, breakthrough_ratio=0.1

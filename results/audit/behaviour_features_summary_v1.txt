@@ -1,0 +1,17 @@
+BEHAVIOUR FEATURE TABLES (Tier 1, PASS=50.0 [institutional])
+data-derived gap thresholds (p10/p90, 24h-capped):
+  exam:     fast<= 12s, long>= 243s
+  missions: fast<= 11s, long>= 273s
+exam:     581 students  -> exam_behaviour_features_v1.csv
+missions: 703 students  -> missions_behaviour_features_v1.csv
+
+CLUSTER ON (behaviour): questions_attempted, total_attempts, median_attempts, median_fast_retry_ratio, median_long_pause_ratio, median_mean_delta_sec, median_span_sec, median_time_to_success_sec, median_improving_ratio, [missions: active_weeks, active_days]
+HELD ASIDE (outcome):   median_best_score, median_final_score, median_score_gain, solved_pass_count, solved_pass_rate, solved_full_count, solved_full_rate, never_solved_count
+
+exam sanity (means over students):
+  median_attempts: 14.51
+  median_fast_retry_ratio: 0.08
+  median_long_pause_ratio: 0.14
+  median_best_score: 42.41
+  solved_pass_rate: 0.42
+  solved_full_rate: 0.27

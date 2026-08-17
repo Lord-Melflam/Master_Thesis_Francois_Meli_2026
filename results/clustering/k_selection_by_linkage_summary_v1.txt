@@ -1,0 +1,17 @@
+The four k-selection criteria under each linkage rule, same de-dup input as script 28.
+'largest group' is the size of the biggest group at that k: the concrete meaning of 'balanced'.
+
+=== EXAM (n=569, chosen k=4) ===
+    linkage  silhouette  stability  Calinski-H  Davies-B  largest group
+       ward       0.185       0.54          61      1.82       417 / 569
+   complete       0.599       0.77          24      0.49       563 / 569
+    average       0.599       0.80          24      0.49       563 / 569
+     single       0.668       0.77          18      0.22       566 / 569
+
+=== YEAR (n=569, chosen k=3) ===
+    linkage  silhouette  stability  Calinski-H  Davies-B  largest group
+       ward       0.164       0.60          75      1.89       321 / 569
+   complete       0.684       0.57          27      0.20       567 / 569
+    average       0.684       0.74          27      0.20       567 / 569
+     single       0.684       0.80          27      0.20       567 / 569
+

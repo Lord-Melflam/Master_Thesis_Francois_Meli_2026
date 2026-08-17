@@ -1,0 +1,14 @@
+class Commercial(Employe):
+    def __init__(self, nom, taux_horaire, heures_travaillees, produits_vendus, bonus_par_produit):
+        Employe.__init__(self, nom, taux_horaire, heures_travaillees)
+        self.produits_vendus = produits_vendus
+        self.bonus_par_produit = bonus_par_produit
+
+
+    def bonus(self):
+        return self.produits_vendus * self.bonus_par_produit
+
+
+    def salaire(self):
+        salaire = self.bonus() + Employe.salaire(self)
+        return salaire

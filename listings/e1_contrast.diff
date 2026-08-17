@@ -1,0 +1,12 @@
+            reservation au numero de table affecte, ou ``None`` si aucune table disponible ne peut
+            accueillir le groupe, selon les regles deterministes de l'enonce.
+-    """
+-    table = [numero_table, capacite]
+-    numero_tables >= 1
+-    reservation >= 1
+-    (nom, taille_groupe) =  reservation
+-    reservation = [nom, taille_groupe]
+-    taille_groupe >= 1
+-    numero_table = numero_table or None
+-    return {nom: numero_table ou None, ...}
++    """

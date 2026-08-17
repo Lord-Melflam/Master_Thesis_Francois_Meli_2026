@@ -1,0 +1,49 @@
+Two-stage feature cleaning for the clustering INPUT (569 linked students).
+Stage A: drop degenerate (raw IQR==0). Stage B: greedy de-dup at |Spearman| >= 0.8.
+Removed features stay in the dictionary as descriptive findings; only excluded from input.
+
+=== EXAM — 12 features -> kept 11 for clustering ===
+  A. degenerate (near-constant, IQR==0): (none)
+  B. redundant, dropped (most redundant first):
+       - long pauses            (max|rho|=0.80, mean|rho|=0.17)
+  kept: questions attempted, attempts/question, quick resubmissions, gap between tries, tries that improved, lines changed/edit, edits, no gain, small fix, big gain, code lines, comment share, distinct concepts
+
+=== YEAR — 14 features -> kept 12 for clustering ===
+  A. degenerate (near-constant, IQR==0): ['comment share']
+  B. redundant, dropped (most redundant first):
+       - active days            (max|rho|=0.91, mean|rho|=0.29)
+  kept: questions attempted, attempts/question, quick resubmissions, long pauses, gap between tries, tries that improved, lines changed/edit, edits, no gain, small fix, big gain, code lines, distinct concepts, active weeks
+
+--- Are the removed (degenerate+redundant) features the same in year and exam? ---
+  removed in BOTH : (none)
+  removed in EXAM only: ['long pauses']
+  removed in YEAR only: ['active days', 'comment share']
+
+=== EXAM stability: FULL vs DEDUP ===
+   k  sil_full stab_full   sil_dedup stab_dedup
+   2     0.469      0.51       0.256       0.47
+   3     0.226      0.46       0.183       0.53
+   4     0.232      0.40       0.185       0.54
+   5     0.147      0.28       0.131       0.44
+   6     0.112      0.34       0.070       0.37
+   7     0.112      0.34       0.079       0.41
+  ARI(full k=3, dedup k=3) = 0.46  (1=same grouping; low=de-dup changed structure)
+  DEDUP k=3 clusters (labelled by ascending mean exam grade):
+    E1: n=105, mean exam grade 10 | ↓code lines(-1.4); ↓distinct concepts(-1.4); ↓tries that improved(-1.0); ↓attempts/question(-0.6)
+    E2: n=417, mean exam grade 40 | ↑code lines(+0.3); ↑distinct concepts(+0.3); ↓small fix, big gain(-0.2); ↑tries that improved(+0.2)
+    E3: n=47, mean exam grade 85 | ↑small fix, big gain(+2.8); ↑tries that improved(+0.8); ↑questions attempted(+0.6); ↑code lines(+0.5)
+
+=== YEAR stability: FULL vs DEDUP ===
+   k  sil_full stab_full   sil_dedup stab_dedup
+   2     0.159      0.43       0.142       0.51
+   3     0.156      0.43       0.164       0.59
+   4     0.160      0.49       0.152       0.54
+   5     0.161      0.50       0.153       0.56
+   6     0.163      0.53       0.156       0.54
+   7     0.167      0.52       0.102       0.54
+  ARI(full k=3, dedup k=3) = 0.72  (1=same grouping; low=de-dup changed structure)
+  DEDUP k=3 clusters (labelled by ascending mean exam grade):
+    Y1: n=155, mean exam grade 33 | ↓questions attempted(-0.9); ↓active weeks(-0.9); ↓attempts/question(-0.6); ↓code lines(-0.6)
+    Y2: n=93, mean exam grade 35 | ↑quick resubmissions(+1.9); ↑attempts/question(+0.9); ↓tries that improved(-0.6); ↓gap between tries(-0.6)
+    Y3: n=321, mean exam grade 42 | ↑questions attempted(+0.4); ↑active weeks(+0.4); ↑code lines(+0.4); ↓quick resubmissions(-0.4)
+

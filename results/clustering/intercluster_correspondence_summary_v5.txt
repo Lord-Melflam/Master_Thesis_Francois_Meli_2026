@@ -1,0 +1,20 @@
+Inter-cluster correspondence — YEAR profile (k=3) x EXAM profile (k=4).
+569 students in both. Clustered at each dataset's own data-driven k (script 28).
+
+chi-square = 28.6, dof = 6, p = 0.000
+Cramer's V = 0.159  (0=no association, 1=perfect)
+ARI = 0.074  (one scalar summary of the same table)
+
+counts  (rows = year Yx, cols = exam Ex):
+        E1(g1)  E2(g12)  E3(g40)  E4(g85)   row total
+  Y1(g33)       9      36      95      15   155
+  Y2(g35)       3      20      64       6   93
+  Y3(g42)       3      34     258      26   321
+row % (of each YEAR cluster, where they land in the EXAM):
+  Y1           6%     23%     61%     10%
+  Y2           3%     22%     69%      6%
+  Y3           1%     11%     80%      8%
+
+reading: a weak but STATISTICALLY SIGNIFICANT association (V=0.16, p=0.000) -> NOT independent, though the year explains little of the exam grouping.
+  NB1: a near-zero ARI (0.07) alone would have wrongly read as 'independent' — the chi-square/V is the precise test (Siegfried's point).
+  NB2: 2 of 12 cells have expected count <5 (small E2/E4 columns) -> the chi-square p is fragile here; treat the association as weak-and-tentative, not strong.

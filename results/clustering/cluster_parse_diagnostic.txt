@@ -1,0 +1,8 @@
+PER-EXAM-CLUSTER PARSE DIAGNOSTIC (final submissions per (student, question)).
+cluster labels from assignments_exam.csv (ascending mean exam grade).
+
+  cluster  students  finals  parsed%  syntaxerr%  no-parse students
+  E1             15      65      68%         32%          3 / 15
+  E2             90     416      89%         11%          0 / 90
+  E3            417    2149      95%          5%          0 / 417
+  E4             47     274     100%          0%          0 / 47
