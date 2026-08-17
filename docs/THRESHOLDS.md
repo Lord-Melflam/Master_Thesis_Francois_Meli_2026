@@ -50,9 +50,9 @@ Computed by `12_score_categories.py`:
 return {h: s / N_Q for h, s in by_student.items()}   # /6, unattempted = 0
 ```
 
-A student's exam grade is the **mean of their final score on each of the six questions, on 0–100, with a
+A student's exam grade is the **mean of their final score on each of the six questions, on 0 to 100, with a
 question never attempted counting as 0**. It is the autograder's score, not the mark awarded for the
-course: it is not on the 0–20 scale and it excludes the bonus points earned through the *phase de
+course: it is not on the 0 to 20 scale and it excludes the bonus points earned through the *phase de
 réalisation*. Because the divisor is always 6, the grade reflects how far a student got as well as how well
 they did.
 
@@ -86,12 +86,12 @@ full grouping using the adjusted Rand index.
 
 Assigned by `25_episodes.py`, **first match wins**, so the order of these rules is part of the definition:
 
-1. `one-shot` — passed within 2 submissions
-2. `few tries, no pass` — never passed, ≤ 3 submissions
-3. `many tries, no pass` — never passed, ≥ 4 submissions
-4. `breakthrough` — passed, and a small edit (≤ 3 lines) was followed by a rise of ≥ 50 points
-5. `pass after reversals` — passed, with the score dropping at least twice
-6. `steady-climb` — everything else that passed
+1. `one-shot`: passed within 2 submissions
+2. `few tries, no pass`: never passed, ≤ 3 submissions
+3. `many tries, no pass`: never passed, ≥ 4 submissions
+4. `breakthrough`: passed, and a small edit (≤ 3 lines) was followed by a rise of ≥ 50 points
+5. `pass after reversals`: passed, with the score dropping at least twice
+6. `steady-climb`: everything else that passed
 
 The 3-line cut used here is **not** the small-edit cut above: it is fixed, and it defines the episode
 *shape*, whereas the feature uses the pooled percentile. Because `one-shot` is tested before

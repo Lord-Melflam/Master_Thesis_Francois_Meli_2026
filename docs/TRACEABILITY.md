@@ -16,7 +16,7 @@ All 36 figures printed in the thesis, in `figures/`, prefixed by the chapter tha
 them to `data/v2/res_python/plots/` with a `_vN` suffix; the copies here are the versions the manuscript
 uses, renamed.
 
-### Chapter 5 — Quantitative results
+### Chapter 5: Quantitative results
 
 | figure in `figures/` | produced by | what it shows |
 |---|---|---|
@@ -30,7 +30,7 @@ uses, renamed.
 | `ch05_intercluster_correspondence.pdf` | `29_intercluster_correspondence.py` | where each year group lands in the exam |
 | `ch05_question_difficulty.pdf`, `ch05_question_correlation.pdf` | `32_per_question.py` | per-question outcomes, and the correlation between question pairs |
 
-### Chapter 6 — Behavior at the episode level
+### Chapter 6: Behavior at the episode level
 
 | figure in `figures/` | produced by | what it shows |
 |---|---|---|
@@ -61,12 +61,12 @@ the pseudonymous hash printed in the thesis.
 | group feature signatures (z) | e.g. E1 distinct concepts −3.38 | `clustering/results.json` (`signature_z`) | `31_build_results.py` |
 | features kept for grouping | exam 11, coursework 12 | `clustering/kept_features.json` | `22_dedup_year_exam.py` |
 | silhouette, stability, Calinski-Harabasz, Davies-Bouldin, k = 2…8 | exam k=4 stability 0.54; year k=3 stability 0.60 | `clustering/k_selection_summary_v3.txt` | `28_k_selection.py` |
-| the same, under the other three linkages | — | `clustering/k_selection_by_linkage_summary_v1.txt` | `35_k_selection_by_linkage.py` |
+| the same, under the other three linkages | (see the table) | `clustering/k_selection_by_linkage_summary_v1.txt` | `35_k_selection_by_linkage.py` |
 | stability before and after feature cleaning | year k=3: 0.43 → 0.60 | `clustering/dedup_compare_summary_v1.txt` | `22_dedup_year_exam.py` |
 | episode-shape distribution | exam 2,904 episodes; coursework 33,888 | `clustering/episode_archetypes_summary_v5.txt` | `25_episodes.py` |
 | year ↔ exam link | χ²(6) = 28.6, Cramér's V = 0.159, ARI = 0.07 | `clustering/results.json` (`year_vs_exam`), `clustering/intercluster_correspondence_summary_v5.txt` | `29_intercluster_correspondence.py` |
 | students whose code never parses | 3 of E1's 15 | `clustering/cluster_parse_diagnostic.txt` | `34_cluster_parse_diagnostic.py` |
-| correlation between exam questions | strongest pair q4–q6, r = 0.65 | `clustering/exam_feature_correlation_v2.csv`, and the per-question summary | `32_per_question.py` |
+| correlation between exam questions | strongest pair q4-q6, r = 0.65 | `clustering/exam_feature_correlation_v2.csv`, and the per-question summary | `32_per_question.py` |
 | cohort chain | 588 → 581 exam accounts; 703 coursework; 569 in both | `audit/exam_audit_summary_v1.txt`, `audit/missions_audit_summary_v1.txt` | `01_exam_audit.py`, `02_missions_audit.py` |
 | feature thresholds | quick/long gap, small/large edit | `audit/behaviour_features_summary_v1.txt`, `audit/diff_features_summary_v1.txt` | `04_build_behaviour_features.py`, `05_build_diff_features.py` |
 
@@ -93,5 +93,5 @@ breakthrough *shape* covers 44.5% of coursework episodes while 50.1% of them *co
 
 ## 5. What is not here
 
-Per-student and per-submission tables — the behavior features for each of the 569 students, the cluster
-assignments, the per-submission scores — are **not** published. See [`DATA.md`](DATA.md).
+Per-student and per-submission tables are **not** published: the behavior features for each of the 569
+students, the cluster assignments, and the per-submission scores. See [`DATA.md`](DATA.md).

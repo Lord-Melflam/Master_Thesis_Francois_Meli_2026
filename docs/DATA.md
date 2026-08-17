@@ -7,7 +7,7 @@ autograder, which keeps every submission a student makes rather than only the la
 
 | dataset | period | content | submissions | students |
 |---|---|---|---|---|
-| coursework | 2025–2026 Q1 | 11 weekly missions, 99 practice questions | 235,636 | 703 |
+| coursework | 2025-2026 Q1 | 11 weekly missions, 99 practice questions | 235,636 | 703 |
 | exam | 22 January 2026 | 6 questions, one supervised session | 48,020 | 581 |
 
 Each submission carries a pseudonymous student hash, the question, the submission number, a timestamp, the
@@ -40,7 +40,7 @@ recognised from timestamps, comments or self-chosen variable names. Publishing t
 of 569 identifiable-in-principle students would make that risk considerably worse than showing the short
 extracts the thesis prints.
 
-**So the raw archive is not here, and neither are the derived per-student tables** — the behavior features
+**So the raw archive is not here, and neither are the derived per-student tables**: the behavior features
 for each student, the cluster assignments, the per-submission score tables. What is published is aggregate:
 group-level signatures, distributions, the selection tables, and the figures.
 
