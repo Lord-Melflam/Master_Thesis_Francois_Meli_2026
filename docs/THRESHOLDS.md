@@ -79,8 +79,9 @@ Set in `common.py`, which every downstream script imports so that no two scripts
 | group labels | renumbered 1…k by ascending mean exam grade, so E1 is always the lowest |
 
 Ward has no random component, so the grouping is deterministic. The only randomness in the analysis is the
-subsampling used to measure stability: repeated random 80% subsamples, re-clustered and compared with the
-full grouping using the adjusted Rand index.
+subsampling used to measure stability: **50** random **80%** subsamples, re-clustered and compared with the
+full grouping using the adjusted Rand index. The seed is fixed in the code, `np.random.default_rng(0)` in
+`pipeline/28_k_selection.py`, so the stability figures reproduce exactly.
 
 ## Episode shapes
 

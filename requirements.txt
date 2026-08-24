@@ -1,0 +1,20 @@
+# Environment the analysis was run in.
+# Python 3.12.3
+#
+# These are the versions actually installed in the virtual environment used to
+# produce every result in the thesis, not a guess at a compatible range. They are
+# pinned exactly so that anyone re-running the pipeline can rule the environment
+# out as a source of difference.
+#
+# Note that the pipeline cannot be executed from this repository alone: the raw
+# submission archive is not published. See docs/DATA.md.
+#
+#   python -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+
+numpy==2.3.4
+scipy==1.17.0
+scikit-learn==1.8.0
+matplotlib==3.10.8
+seaborn==0.13.2
+pandas==2.3.3

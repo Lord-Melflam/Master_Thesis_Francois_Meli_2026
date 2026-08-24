@@ -60,7 +60,12 @@ The scripts run in the numeric order given in `pipeline/CODE_INDEX.md` and expec
 every intermediate result they produce and every figure they draw is included, so their output can be
 inspected and checked against the thesis.
 
-Python 3.12, with `numpy`, `scipy`, `matplotlib` and `seaborn`.
+Python **3.12.3**. Exact library versions are pinned in [`requirements.txt`](requirements.txt):
+numpy, scipy, scikit-learn, matplotlib, seaborn, pandas.
+
+The only randomness in the analysis is the subsample stability check, and its seed is fixed in the
+code (`pipeline/28_k_selection.py`, `np.random.default_rng(0)`, 50 subsamples at 0.8). Ward has no
+random component, so the grouping itself is deterministic.
 
 ## Licence
 
